@@ -8,6 +8,7 @@
 - HTML/CSS
 
 ## To run this project, install it locally using npm
+
 $ cd ../cocktail
 $ npm install
 $ npm start
