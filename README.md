@@ -1,9 +1,7 @@
-# COCKTAIL SEARCH
+# COCKTAIL application
 
-## Công nghệ sử 
-- sdafd
+## Language / Framework
 
-### dfdf
+- React / Redux
 
-- ádfkjskdf
-- fasdf
+## 
