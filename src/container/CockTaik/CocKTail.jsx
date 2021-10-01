@@ -20,8 +20,16 @@ export default function CocKTail(props) {
 
   const columns = [
     {
-      title: 'idDrink',
+      title: 'id',
       dataIndex: 'idDrink',
+    },
+    {
+      title: 'name ',
+      dataIndex: 'strDrink',
+      sorter: {
+        compare: (a, b) => a.strInstructions - b.strInstructions,
+        multiple: 2,
+      },
     },
     {
       title: 'dateModified',
@@ -32,7 +40,7 @@ export default function CocKTail(props) {
       },
     },
     {
-      title: 'strAlcoholic ',
+      title: 'alcoholic ',
       dataIndex: 'strAlcoholic',
       sorter: {
         compare: (a, b) => a.strAlcoholic - b.strAlcoholic,
@@ -47,16 +55,9 @@ export default function CocKTail(props) {
         multiple: 2,
       },
     },
+   
     {
-      title: 'strDrink ',
-      dataIndex: 'strDrink',
-      sorter: {
-        compare: (a, b) => a.strInstructions - b.strInstructions,
-        multiple: 2,
-      },
-    },
-    {
-      title: 'strDrinkThumb',
+      title: 'images',
       dataIndex: 'strDrinkThumb',
       render: (text, film) => {
         return <Fragment>
