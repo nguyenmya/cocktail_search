@@ -1,5 +1,15 @@
 # COCKTAIL Application
 
+## Introduction
+
+- This is a user interface application and designed as Admin.
+
+- API used: 
+
+  - Search by name: "www.thecocktaildb.com/api/json/v1/1/search.php?s=name".
+  
+  - Search no name: "www.thecocktaildb.com/api/json/v1/1/search.php?s".
+
 ## Language / Framework
 
 - React / Redux
