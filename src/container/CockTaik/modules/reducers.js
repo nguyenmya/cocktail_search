@@ -16,7 +16,6 @@
          state.err= payload;
          return { ...state };
      }
-      
       default:
         return state;
     }

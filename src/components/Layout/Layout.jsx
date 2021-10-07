@@ -1,6 +1,6 @@
 import React from "react";
 import './Layout.scss'
-
+import { Link } from "react-router-dom"
 export default function Layout() {
 
   return (
@@ -14,7 +14,7 @@ export default function Layout() {
           </h2>
         </div>
         <div className="sidebar-menu">
-      
+
           <ul>
             <li>
               <a href className="active">
@@ -28,48 +28,31 @@ export default function Layout() {
                 data-toggle="collapse"
                 aria-expanded="false"
                 className="dropdown-toggle">
-                User Managemen              </a>
-
+                  Câu Trả Lời
+              </a>
               <ul className="collapse list-unstyled" id="homeSubmenu">
                 <li>
-                  <a  href="...">
-                  User Managemen{" "}
-                  </a>
+                  <Link className="nav-link" to="/Cau1">
+                    Câu1
+                  </Link>
                 </li>
                 <li>
-                  <a  href="...">Add Movie</a>
+                  <Link className="nav-link" to="/Cau2">
+                    Câu2
+                  </Link>
                 </li>
                 <li>
-                  <a href="...">Delete </a>
-                </li>
-                <li>
-                  <a href="...">Edit </a>
+                  <Link className="nav-link" to="/Cau3">
+                    Câu 3
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="">
-              <a
-                href="#homeUserSubMenu"
-                data-toggle="collapse"
-                aria-expanded="false"
-                className="dropdown-toggle">
-                User Management
-              </a>
-
-              <ul className="collapse list-unstyled" id="homeUserSubMenu">
-                <li>
-                  <a className="nav-link" to="/Admin/UserManagement">
-                    User Management
-                  </a>
-                </li>
-              </ul>
             </li>
-
-
           </ul>
         </div>
       </div>
-
       <div div className="main-content">
         <header>
           <h2>
@@ -87,10 +70,7 @@ export default function Layout() {
         <main>
           <div className="cards1">
             <div className="card-single1">
-              {/* <MovieManager/> */}
 
-              {/* <AddMovie/> */}
-              {/* <EditMovie/> */}
             </div>
           </div>
         </main>
